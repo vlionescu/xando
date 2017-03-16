@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="xando.css">   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+  </head>
+
+  <body>
+		<div class="xo-game">
+			<button id="xo-start-button">START</button>
+			<table class="xo-table invisible">
+				<tr>
+					<td></td>
+					<td class="xo-center-top"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="xo-center-left"></td>
+					<td></td>
+					<td class="xo-center-right"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="xo-center-bottom"></td>
+					<td></td>
+				</tr>
+			</table>
+			<div class="xo-message">&nbsp;</div>
+			<section class="xo-p-score xo-score">
+				<h2>Player score</h2>
+				<div class="xo-player-wins"></div>
+			</section>
+			<section class="xo-ai-score xo-score">
+				<h2>A.I. score</h2>
+				<div class="xo-ai-wins"></div>
+			</section>
+		</div>
+    <script src='xando.js'></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.xo-game{
+	position:relative;
+	width:840px;
+	margin:0 auto;
+}
+.xo-center-top, .xo-center-bottom{
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+}
+
+.x{
+  background: url('x.png');
+  background-size: 100px;
+}
+.o{
+  background: url('0.png');
+  background-size: 100px;
+}
+.xo-center-right, .xo-center-left{
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.xo-table tr:nth-child(2) td:nth-child(2){
+  border:3px solid black;
+}
+.xo-table td{
+  box-sizing: border-box;
+  width: 100px;
+  height:100px;
+  float: left;
+}
+.xo-table td:hover{
+	cursor:pointer;
+}
+.xo-table{
+  border-spacing: 0;
+  border-collapse: collapse;
+	margin:0 auto;
+	margin-top:100px;
+	transition:all 1s;
+	visibility: invisible;
+}
+
+.xo-game > button{
+	margin:50px auto 0 auto;
+	width:100px;
+	height:100px;
+	display:block;
+	border-radius:50%;
+	background: white;
+	color: black;
+	border:3px solid black;
+
+
+
+}
+
+.xo-game button:hover {
+	background: black;
+	color:white;
+	cursor:pointer;
+}
+.xo-game button:active {
+	position:relative;
+	top:1px;
+}
+.xo-game-started{
+	color:white;
+	background: black;
+}
+.xo-score{
+	height:200px;
+	width:150px;
+	position:absolute;
+	top:150px;
+	text-align:center;
+}
+
+.xo-p-score{
+	left:100px;
+	color:#72d0f2;
+}
+.xo-ai-score{
+	right:100px;
+	color: #fa7564;
+}
+.xo-score h2{
+	font-family: 'Righteous', cursive;
+	border-bottom: 3px solid black;
+}
+.xo-message{
+	width:300px;
+	text-align:center;
+	font-size:40px;
+	margin:0 auto;
+}
+
+.invisible{
+	opacity:0;
+	transition: all 1s;
+}
+
+.winning-path{
+	background-color: yellow;
+}
+
